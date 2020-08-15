@@ -27,4 +27,11 @@ $ \setmainfont{Times New Roman} // font is used here Times New Roman
 
 ```
 
+3. Upload the font file in blank project like kalpurish.ttf or siyamrupali.ttf. You can also download them from this repository.
+Now write this line on project
+
+```
+\newfontface{\bn}{kalpurush.ttf} // if you use kalpurush font then write kalpurush.ttf otherwise it should be siyamrupali.ttf
+
+```
 
