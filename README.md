@@ -1,45 +1,43 @@
-# Bangla Writing in Overleaf
-1. Create an account in [overleaf](www.overleaf.com) & then log in.
-
-In this work, to write in bangla Avro phonetic open-source keyboard software is being used. Avro is developed by [OmicronLab](https://www.omicronlab.com/index.html). To write in overleaf, one can use any font from [OmicronLab](https://www.omicronlab.com/index.html). Font link is [here](https://www.omicronlab.com/bangla-fonts.html). There are several fonts like Kalpurush, Siyamrupali etc. Download any one of the fontfile like kalpurush.ttf, siyamrupali.ttf.
-
-![alt text](https://github.com/SakibulIslamSazzad/bangla_writing_in_overleaf/blob/master/banglaoverleaf.png)
+```
+\documentclass{article}
 
 
-2. Create a new project in overleaf, then add the following document packages-
 
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+%\graphicspath{{images/}}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{cite}
+\usepackage{multirow}
+\usepackage{color}
+\setmainfont{Times New Roman}
+\newfontface{\bn}{kalpurush.ttf}
+
+
+\begin{document}
+\maketitle
+\section*{First Writing in Bangla}
+\bn{টানা এক সপ্তাহ টিভি সিরিজ মুভি দেখার পর আজ সকাল থেকে নিজের উপর খুবই বিরক্তি ধরে গেছে। নিজেকে খুবই লুথা মনে হচ্ছে। তার উপর দিন দুনিয়া কিছুই ভাল লাগতেছেনা। মনে হচ্ছে বাইচা থাইকা কি লাভ। সরকারের করোনা নিয়ন্ত্রন দেখে মন মেজাজ আরও খারাপ। আমি খুব বেশিক্ষন টিভিসিরিজ অথবা মুভি দেখলে যে সমস্যাটা হয় টা হচ্ছে কান প্রচণ্ড ব্যথা করে, এই কারনে আমি কানে হেডফোন খুবই কম লাগাই। আর কান যাতে দুটাই নষ্ট না হয় এই কারনে সবসময় বাম কানে হেডফোন লাগাই এবং সত্যি কথা হচ্ছে আমি বাম কানে আসলেই অনেক কম শুনি, কেউ আমাকে বাম দিক ডাকলে আমি দেখা যায় সাড়া কম দিতে পারি আজ সকাল থেকে নতুন আরেকটা সমস্যা যেটা হচ্ছে ডান চোখ থেকে পানি পড়ছে এবং চোখ ফুলে গেছে। এইসব কারনে আরও মনে হচ্চিল বেছে লাভ নাই, এই ফালতু দেশে জন্ম নেয়া এক পাপ, বেচে থাকা আরেক পাপ । তো তারপরও কেন যেন চেয়ারে বসে কিছুক্ষন কিছু সিমুলেশন রান করলাম, স্কলার থেকে কিছু পেপার পড়লাম। তো সন্ধার পর থেকে কেন জেনে মনে হল ল্যাটেক্সে বাংলা লিখলে কেমন হয়? আমি এই জিনিসটা গতবছর গ্রাজুএশন কমপ্লিট করার করতে চেয়েছিলাম। হুট করে মনে হল আজ ট্রাই করে দেখি। তার আগে আমি একটু বলে নেই ল্যাটেক্সের সাথে আমার পরিচয় কিভাবে?}
+\newline
+\newline
+\bn{\large{\bn ল্যাটেক্সের সাথে আমার পরিচয় } }
+\newline
+\bn{ল্যাটেক্সের সাথে আমার প্রথম পরিচয় হয় সাস্টে ২/২ তে, ইলেক্ট্রনিক্স-২ ল্যাব নিচ্চিলেন আরিফ স্যার। তো সাধারনত যা হয় ল্যাবে একটা ল্যাব রিপোর্ট জমা দিতে হয়। ল্যাব রিপোর্ট ওয়ার্ড ব্যবহার করেই দেয়া হয় সাধারনত আরিফ স্যার বললেন ল্যাব রিপোর্ট জমা দিবা ল্যাটেক্স ব্যবহার করে। এইটা কি জিনিস তখনো জানতাম না। তো কোনোরকমে ল্যাটেক্স ইন্সটল করে রিপোর্ট জমা দিলাম। তারপর থেকে ল্যাটেক্স ব্যবহার করা শুরু। ওয়ার্ড দিলাম আন ইন্সটল করে। ইউনিভারিসিটি লাইফে তারপর যতগুলো ল্যাব ছিল সবগুলো ল্যাটেক্স ব্যবহার করে সেগুলোর রিপোর্ট জমা দিছি। থিসিসের সময় আমার ইচ্ছে করছিল ল্যাটেক্স ব্যবহার করে থিসিস রিপোর্ট করতে কিন্তু বর্ষা ওয়ার্ড দিয়ে খুব সুন্দর করে কাজটা করে ফেলছে। এইজন্য আর প্যারা নেই নাই। তার উপর আমি সাইটেশন কিভাবে ল্যাটেক্সে দিতে হয় জানতাম না, থিসিসের কয়েকদিন আগে বিপুল স্যারের একটা ইউটিউব ভিডিও বেশ হেল্প করছে। যদিও এখন আমি ল্যাটেক্স ব্যবহার করে এখন সাইটেশন করতে পারি। এমি যতগুলো ল্যাব রিপোর্ট জমা দিছি তার মধ্যে কয়েকটা কোর্সের ল্যাব রিপোর্ট করতে যেয়ে অনেক খাটা খাটনি করতে হইছে- ফলে ল্যাটেক্স ব্যবহার করে শিখেছি। আমি অভারলিফ ব্যবহার করে প্রথম রিপোর্ট করি VLSI ল্যাবে। বেশ মজা পাইছি রিপোর্টটা করে, প্রজেক্টাও মজার ছিল, যদিও বাশ খেয়েছি কিন্তু শিখে মজা পাইছি। তো গত বছর মনে হল এখন থেকে ব্লগ অথবা বাংলায় অন্য কিছু লিখতে হলে ল্যাটেক্স ব্যবহার করে লিখব। কিন্তু আমি বুঝে উঠতে পারছিলাম না কিভাবে কি করতে হয়। আজ অনেক্ষন ঘাটাঘাটি করে জিনিসটা ব্যবহার উপযোগী করতে পারলাম। একটু বলি আমি যখন সার্চ দিচ্ছিলাম তখন স্টেকভারফ্লো তে দেখলাম ওমর শিহাব আই বি এম কোয়ান্টাম কম্পিউটিং এ কাজ করেন, উনি ২০১৭ সালে একটা প্রশ্ন তে কমেন্ট করছেন যে সলিউশন দেয়া আছে টা কাজ করছে না। মনে হল ব্যাপারটা সিরিয়াস । তো আজকের লেখা হচ্ছে কিভাবে অভারলিফ এ বাংলা লিখবেন  }
+
+\bn{\large{\bn অভারলিফে বাংলা লিখাঃ }}
+
+\begin{itemize}
+    \item \bn{প্রথমেই যে কাজটা করা ল্গাবে তা হচ্ছে অভারলিফে একটা আকাউন্ট খুলা লাগবে এবং https://www.omicronlab.com/bangla-fonts.html এই লিঙ্ক থেকে যেকোনো একটা ফন্ট ডাউনলোড করা লাগবে। এইখানে অনেকগুল ফন্ট আছে কালপুরুষ, সিয়াম রূপালি যেইটা ইচ্ছে করে ডাউনলোড করেন। এইবার অভারলিফে ফাইলটা আপলোড করেন। যেমন কালপুরুষ হলে ফাইলের নামহবে - kapurush.ttf এবং সিয়াম রূপালি হলে ফাইলের নাম হবে - Siyamrupali.ttf}
+    \item তারপর অভারলিফের মেনু অপশন থেকে  কম্পাইলার সিলেক্ট করবেন XeLatex আসলে এই কম্পাইলারটাই ইংরেজি ছাড়া অন্য যেকোনো ভাষায় লিখার কম্পাইলারের কাজ করে। আমি নিজেও ব্যাপারটা ভাল বুঝি না কিন্তু যতদূর বুঝলাম কাহিনি এইটাই। সবশেষে মনে রাখবেন যেহেতু অভারলিফে আসলে অভ্র ব্যবহার করে বাংলা লিখছেন তাই লিখা শুরুর আগে অবশ্যই অভ্র ওপেন করে নিবেন। 
+\end{itemize}
+
+
+\end{document}
 
 ```
- \documentclass{article}
- \usepackage{fontspec} // package for font
- \usepackage{graphicx} // package for images
- \usepackage{float}
- \usepackage{amsmath} // package for mathematical experssions
- \graphicspath{{images/}} // all images are uploaded in a folder named *images* , you can name it anything
- \usepackage{caption} // package for image caption
- \usepackage{subcaption}
- \usepackage{array}
- \usepackage{tabu} // package for table
- \usepackage{cite} // package for hyperlink
- \usepackage{multirow}
- \usepackage{color}
- \setmainfont{Times New Roman} // font is used here Times New Roman
-
-```
-
-3. Upload the font file in blank project like kalpurish.ttf or siyamrupali.ttf. You can also download them from this repository.
-Now write this line on project
-
-```
-\newfontface{\bn}{kalpurush.ttf} // if you use kalpurush font then write kalpurush.ttf otherwise it should be siyamrupali.ttf
-
-```
-4. Then from the *Menu* section change the compiler to **Xelatex** and keep everything like this
-
-![alt text](https://github.com/SakibulIslamSazzad/bangla_writing_in_overleaf/blob/master/bangla2.png)
-
-
-You will find a demo writing in overleaf in repository
-
-**Enjoy Writing in Bangla**
 
