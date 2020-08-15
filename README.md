@@ -8,10 +8,9 @@ In this work, to write in bangla Avro phonetic open-source keyboard software is 
 
 2. Craete a new project in overleaf, then add the following document packages-
 
+
+```
 $ \documentclass{article}
-
-
-
 $ \usepackage{fontspec} // package for font
 $ \usepackage{graphicx} // package for images
 $ \usepackage{float}
@@ -25,5 +24,7 @@ $ \usepackage{cite} // package for hyperlink
 $ \usepackage{multirow}
 $ \usepackage{color}
 $ \setmainfont{Times New Roman} // font is used here Times New Roman
+
+```
 
 
